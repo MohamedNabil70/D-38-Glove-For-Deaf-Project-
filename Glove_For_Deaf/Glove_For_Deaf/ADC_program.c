@@ -42,7 +42,7 @@
 	
 	void ADC_getDigitalValue(u8 channelNum , u16* digitalReading)
 	{
-		if ((channelNum<32) && (digitalReading!=NULL))
+		if ((channelNum<8) && (digitalReading!=NULL))
 		{
 		//clear only  ADC channel bits from ADMUX REG       
 		ADMUX &= 0b11100000;			 
